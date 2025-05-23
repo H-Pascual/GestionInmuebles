@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GestionInmuebles.Models
+﻿namespace GestionInmuebles.Models;
+public class User
 {
-    internal class User
+    public Guid Id { get; private set; }
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string Password { get; set; } //Cambiar a forma segura
+    public List<Company> CompanyAccess { get; set; }
+
+    public User(string email, string name, string password)
     {
+        Id = Guid.NewGuid();
+        Email = email;
+        Name = name;
+        Password = password;
+        CompanyAccess = [];
     }
+
+    //Login
+    //Logout
 }

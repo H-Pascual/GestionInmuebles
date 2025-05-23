@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GestionInmuebles.Models
+﻿namespace GestionInmuebles.Models;
+public class Account // para llevar la contabilidad
 {
-    internal class Account // para llevar la contabilidad
-    {
-    }
+    public Guid Id { get; private set; }
+    public string Name { get; set; }
+    public decimal Money { get; set; }
 }

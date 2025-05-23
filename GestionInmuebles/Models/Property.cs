@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GestionInmuebles.Models
+﻿namespace GestionInmuebles.Models;
+public abstract class Property //abstract Local o Vivienda o Terreno
 {
-    internal class Property //abstract Local o Vivienda o Terreno
-    {
-    }
 }

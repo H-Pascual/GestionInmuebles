@@ -1,4 +1,4 @@
-﻿namespace GestionInmuebles.Models;
+﻿namespace GestionInmuebles.Models.CompanyLogic;
 public class Account // para llevar la contabilidad
 {
     public Guid Id { get; private set; }

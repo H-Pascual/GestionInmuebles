@@ -1,11 +1,10 @@
-﻿namespace GestionInmuebles.Models;
+﻿namespace GestionInmuebles.Models.PropertyLogic;
 public enum TenantType { Particular, Company }
 public class Tenant
 {
     public Guid Id { get; private set; }
     public string Name { get; set; }
     public Property Property { get; set; }
-    public LeaseContract LeaseContract { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public TenantType Type { get; set; }
@@ -48,6 +47,6 @@ public class Tenant
     public void EndRent(DateTime endDate)
     {
         if (EndDate != null) throw new InvalidOperationException("Ya existe una fecha de fin para este inquilino");
-        EndDate = endDate
+        EndDate = endDate;
     }
 }

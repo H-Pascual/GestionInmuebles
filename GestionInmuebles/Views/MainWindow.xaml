@@ -10,6 +10,6 @@
            Height="720" Width="1200" ShowTitle="True">
     <!-- añadir controls, behavior Icon, ThemeManager-->
     <Grid x:Name="MainContainer">
-        <Button>Hola</Button>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
     </Grid>
 </hc:Window>

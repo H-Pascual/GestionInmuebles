@@ -12,16 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace GestionInmuebles.Views
+namespace GestionInmuebles.Views;
+
+/// <summary>
+/// Lógica de interacción para LoginPage.xaml
+/// </summary>
+public partial class LoginPage : Window
 {
-    /// <summary>
-    /// Lógica de interacción para LoginPage.xaml
-    /// </summary>
-    public partial class LoginPage : Window
+    public LoginPage()
     {
-        public LoginPage()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

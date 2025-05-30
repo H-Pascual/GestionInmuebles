@@ -1,5 +1,4 @@
-﻿using GestionInmuebles.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,20 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace GestionInmuebles;
+namespace GestionInmuebles.Views;
 
 /// <summary>
-/// Lógica de interacción para MainWindow.xaml
+/// Lógica de interacción para HomePage.xaml
 /// </summary>
-public partial class MainWindow : HandyControl.Controls.Window
+public partial class HomePage : Window
 {
-    public MainWindow()
+    public HomePage()
     {
         InitializeComponent();
-        MainFrame.Navigate(new HomePage());
-    }
-    public void NavigateTo(Page page)
-    {
-        MainFrame.Navigate(page);
     }
 }

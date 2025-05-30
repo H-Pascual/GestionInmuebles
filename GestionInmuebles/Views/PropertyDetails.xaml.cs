@@ -12,16 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace GestionInmuebles.Views
+namespace GestionInmuebles.Views;
+
+/// <summary>
+/// Lógica de interacción para PropertyDetails.xaml
+/// </summary>
+public partial class PropertyDetails : Window
 {
-    /// <summary>
-    /// Lógica de interacción para PropertyDetails.xaml
-    /// </summary>
-    public partial class PropertyDetails : Window
+    public PropertyDetails()
     {
-        public PropertyDetails()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

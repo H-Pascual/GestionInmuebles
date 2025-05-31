@@ -23,10 +23,10 @@ public partial class MainWindow : HandyControl.Controls.Window
     public MainWindow()
     {
         InitializeComponent();
-        MainFrame.Navigate(new HomePage());
+        //MainFrame.Navigate(new HomePage());
     }
     public void NavigateTo(Page page)
     {
-        MainFrame.Navigate(page);
+        //MainFrame.Navigate(page);
     }
 }
